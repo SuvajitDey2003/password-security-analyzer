@@ -17,7 +17,7 @@ app.add_middleware(
 
 @app.on_event("startup")
 def startup():
-    load_password_files(["data/common_passwords.txt"])
+    load_password_files(["data/common_passwords.sample.txt"])
 
 @app.get("/")
 def health():
