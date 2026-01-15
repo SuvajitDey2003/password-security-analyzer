@@ -1,4 +1,6 @@
-const API_URL = "http://127.0.0.1:8000/analyze-password";
+// const API_URL = "http://127.0.0.1:8000/analyze-password";
+const API_URL = "https://password-backend.onrender.com/analyze-password";
+
 
 export async function analyzePassword(password) {
   const response = await fetch(API_URL, {
