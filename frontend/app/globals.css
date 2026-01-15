@@ -1,0 +1,100 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Main container */
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Input */
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px; /* prevents zoom on mobile */
+  margin-bottom: 8px;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Strength bar */
+.strength-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 12px 0;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Text */
+p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+/* Messages */
+.error {
+  color: red;
+}
+
+.info {
+  color: gray;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px 10px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* 🖥️ Large screens */
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 60px;
+  }
+}
